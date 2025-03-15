@@ -113,7 +113,7 @@ sns.lineplot(
     y="cnt_hour",
     hue="workingday_hour",  # Pastikan kolom ini ada (1 untuk hari kerja, 0 untuk hari libur)
     estimator="mean",
-    ci=None,
+    errorbar=None,
     ax=ax,
     palette=['#1f77b4', '#ff7f0e'],  # Biru untuk hari kerja, oranye untuk hari libur
     linewidth=2.5
@@ -135,7 +135,7 @@ sns.lineplot(
     y="cnt_hour",
     hue="season_day",  # Pastikan kolom season_day ada
     estimator="mean",
-    ci=None,
+    errorbar=None,
     marker="o",
     ax=ax
 )
